@@ -1,4 +1,15 @@
 GIT
+  remote: git://github.com/spree/spree_fancy.git
+  revision: 1f5cbd43a77a220dcd8933ff609965605c35b968
+  branch: 2-1-stable
+  specs:
+    spree_fancy (1.3.0)
+      compass-rails (~> 2.0.alpha.0)
+      deface (~> 1.0.0rc3)
+      jquery-ui-rails
+      spree_core (~> 2.1.0)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: ea2e9316cd85e9ba66d2ed30dc444cf7ef32827e
   branch: 2-1-stable
@@ -76,6 +87,7 @@ GEM
     cancan (1.6.10)
     canonical-rails (0.0.3)
       rails (>= 3.1, < 5.0)
+    chunky_png (1.2.9)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.3)
@@ -88,6 +100,12 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     colorize (0.6.0)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass-rails (2.0.alpha.0)
+      compass (>= 0.12.2, < 0.14)
     deface (1.0.0)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
@@ -102,6 +120,7 @@ GEM
     erubis (2.7.0)
     execjs (2.0.2)
     ffaker (1.20.0)
+    fssm (0.2.10)
     gyoku (0.4.6)
       builder (>= 2.1.2)
     highline (1.6.18)
@@ -295,6 +314,7 @@ DEPENDENCIES
   sdoc
   spree (= 2.1.2)
   spree_auth_devise!
+  spree_fancy!
   spree_gateway!
   turbolinks
   uglifier (>= 1.3.0)
